@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/gridLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="4"
+    android:orientation="horizontal"
+    android:padding="15dp">
+
+    <TextView
+        android:text="Calculator"
+        style="@style/TextAppearance.Material3.HeadlineLarge"
+        android:layout_marginBottom="10dp"
+        android:layout_columnSpan="4"/>
+
+    <!-- Result Display -->
+    <TextView
+        android:id="@+id/editTextResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="4"
+        android:layout_gravity="fill"
+        android:gravity="end|center_vertical"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_columnWeight="4"
+        android:layout_rowWeight="1" />
+    
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/b7"
+        android:text="7"
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        android:onClick="NumberEvent"
+        android:background="@drawable/bg_btn"
+        app:cornerRadius="100dp"/>
+
+    <Button
+        android:id="@+id/b8"
+        android:text="8"
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        app:cornerRadius="100dp"
+        android:background="@drawable/bg_btn"
+        android:onClick="NumberEvent"
+        android:layout_marginStart="13dp"/>
+
+    <Button
+        android:id="@+id/b9"
+        android:text="9"
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        app:cornerRadius="100dp"
+        android:layout_marginStart="13dp"
+        android:background="@drawable/bg_btn"
+        android:onClick="NumberEvent"/>
+
+    <Button
+        android:id="@+id/div"
+        android:text="÷"
+        android:layout_marginStart="13dp"
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        app:cornerRadius="100dp"
+        android:background="@drawable/bg_btn"
+        android:onClick="OperatorEvent"/>
+
+    <Button
+        android:id="@+id/b4"
+        android:text="4"
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        app:cornerRadius="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_btn"
+        android:onClick="NumberEvent"/>
+
+    <Button
+        android:id="@+id/b5"
+        android:text="5"
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        app:cornerRadius="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="13dp"
+        android:background="@drawable/bg_btn"
+        android:onClick="NumberEvent"/>
+
+    <Button
+        android:id="@+id/b6"
+        android:text="6"
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        app:cornerRadius="100dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_btn"
+        android:onClick="NumberEvent"/>
+
+    <Button
+        android:id="@+id/mul"
+        android:text="×"
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        app:cornerRadius="100dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_btn"
+        android:onClick="OperatorEvent"/>
+
+    <Button
+        android:id="@+id/b1"
+        android:text="1"
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        app:cornerRadius="100dp"
+        android:background="@drawable/bg_btn"
+        android:layout_marginTop="10dp"
+        android:onClick="NumberEvent"/>
+
+    <Button
+        android:id="@+id/b2"
+        android:text="2"
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        app:cornerRadius="100dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_btn"
+        android:onClick="NumberEvent"/>
+
+    <Button
+        android:id="@+id/b3"
+        android:text="3"
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        app:cornerRadius="100dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_btn"
+        android:onClick="NumberEvent"/>
+
+    <Button
+        android:id="@+id/sub"
+        android:text="-"
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        android:layout_marginStart="13dp"
+        app:cornerRadius="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_btn"
+        android:onClick="OperatorEvent"/>
+
+    <Button
+        android:id="@+id/b0"
+        android:text="0"
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        app:cornerRadius="100dp"
+        android:background="@drawable/bg_btn"
+        android:layout_marginTop="10dp"
+        android:onClick="NumberEvent"/>
+
+    <Button
+        android:id="@+id/clr"
+        android:text="C"
+        android:layout_marginStart="13dp"
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        app:cornerRadius="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_btn"
+        android:onClick="NumberEvent"/>
+
+    <Button
+        android:id="@+id/add"
+        android:text="+"
+        android:layout_marginStart="13dp"
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        android:layout_marginTop="10dp"
+        app:cornerRadius="100dp"
+        android:background="@drawable/bg_btn"
+        android:onClick="OperatorEvent"/>
+
+    <Button
+        android:id="@+id/eq"
+        android:text="="
+        android:layout_marginStart="13dp"
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        android:layout_marginTop="10dp"
+        app:cornerRadius="100dp"
+        android:background="@drawable/bg_btn"
+        android:onClick="EqualEvent"/>
+</GridLayout>
